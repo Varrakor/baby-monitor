@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { Auth } from './components/auth';
 import { Home }from './components/home';
 import { auth } from './config/firebase';
+<<<<<<< HEAD
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
@@ -10,6 +11,9 @@ import HomeMobile from './pages/HomeMobile';
 import SignUpMobile from './pages/SignupMobile';
 import LoginMobile from './pages/LoginMobile';
 import DashboardMobile from './pages/DashboardMobile';
+=======
+import { Analytics } from './components/analytics'; 
+>>>>>>> master
 
 import './App.css';
 
@@ -17,7 +21,18 @@ function App() {
   const user = auth.currentUser;
   console.log(user)
 
+<<<<<<< HEAD
   let mobile = false
+=======
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+            <Route path="/" element={<Auth />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/analytics" element={<Analytics />} />
+>>>>>>> master
 
   if(window.navigator.userAgent.match(/Mobile/i)) {
     mobile = true

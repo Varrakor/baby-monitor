@@ -8,7 +8,7 @@ import {getAuth, GoogleAuthProvider} from 'firebase/auth'
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyAR7GuMzr8VRxLKqDPCjoHK9Gth42lN0ck",
   authDomain: "iot-group13.firebaseapp.com",
   projectId: "iot-group13",
