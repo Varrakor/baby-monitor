@@ -1,0 +1,25 @@
+.mobile-nav-bar {
+    background-color: rgba(242, 242, 242, 0.85);
+    position: absolute;
+    top: 47.5rem;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 1rem;
+}
+
+.nav-home, .nav-stat, .nav-profile {
+    width: 3.13rem;
+    height: 3.13rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.home-mobile-icon {
+    font-size: 30px;
+    color: #f9b65d;
+}

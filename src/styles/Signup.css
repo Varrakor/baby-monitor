@@ -1,0 +1,307 @@
+.signup-about-us,
+.signup-contact {
+  position: absolute;
+  height: 4.36%;
+  width: 7.42%;
+  top: 6.08%;
+  left: 11.42%;
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-block;
+  transform-origin: 0 0;
+}
+.signup-contact {
+  height: 4.39%;
+  width: 6.46%;
+  top: 6.05%;
+  left: 19.89%;
+  color: #010101;
+}
+.signup-cradle-family-icon {
+  position: absolute;
+  top: 15.56rem;
+  left: 4.5rem;
+  border-radius: 85px;
+  width: 37.31rem;
+  height: 24.81rem;
+  object-fit: cover;
+}
+.signup-left-container,
+.signup-star-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.signup-star-icon {
+  height: 32.52%;
+  width: 44.92%;
+  top: 40.59%;
+  left: 2.98%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.signup-left-container {
+  top: 0;
+  background-color: rgba(252, 247, 235, 0.85);
+  width: inherit;
+  height: 52rem;
+  transform-origin: 0 0;
+  color: #070707;
+  font-family: var(--font-athiti);
+}
+.terms {
+  color: var(--color-mediumseagreen-100);
+}
+.login-redirect,
+.terms-and-privacy-container {
+  position: absolute;
+  top: 28.94rem;
+  left: 8.25rem;
+  font-size: 0.74rem;
+  font-family: var(--font-athiti);
+  display: inline-block;
+  width: 9.47rem;
+  height: 1.2rem;
+  color: var(--color-gray-400);
+}
+
+.text1,
+.title1 {
+  position: relative;
+  line-height: 125%;
+}
+.title1 {
+  display: none;
+}
+.text1 {
+  flex: 1;
+}
+.input-field1 {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 22.06rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-lg) var(--padding-base);
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-400);
+}
+.error1 {
+  position: relative;
+  font-size: var(--font-size-smi);
+  line-height: 125%;
+  font-weight: 500;
+  color: var(--color-crimson);
+  display: none;
+}
+.signup-input1 {
+  position: absolute;
+  top: 15.38rem !important;
+  left: 6.13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.signup-google-icon {
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.signup-input2,
+.signup-input3 {
+  position: absolute;
+  top: 20rem !important;
+  left: 6.13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.signup-input3 {
+  top: 24.63rem !important;
+}
+.terms-and-privacy-checkbox {
+  position: absolute;
+  top: 29rem;
+  left: 6.63rem;
+  border-radius: 2.96px;
+  border: 0.7px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  width: 1.11rem;
+  height: 1.11rem;
+  overflow: hidden;
+}
+.or-with {
+  position: absolute;
+  top: 36.44rem;
+  left: 15.63rem;
+  line-height: 125%;
+  color: var(--color-gray-300);
+}
+.frame-inner,
+.frame-item {
+  position: absolute;
+  top: 36.41rem;
+  left: 19.91rem;
+  border-top: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 8.31rem;
+  height: 0.06rem;
+}
+.frame-inner {
+  left: 6.09rem;
+}
+.icon-text {
+  position: relative;
+  line-height: 125%;
+  font-weight: 500;
+}
+.signup-apple-icon-button {
+  position: absolute;
+  top: 38.94rem;
+  left: 6.13rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 10.63rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-26xl);
+  cursor: pointer;
+}
+.social-icon-google-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.signup-google-icon-button {
+  position: absolute;
+  top: 38.94rem;
+  left: 17.56rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 10.63rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-26xl);
+  cursor: pointer;
+}
+.social-icon-apple {
+  position: absolute;
+  top: 0.94rem;
+  left: 2rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+}
+.signup-form-container {
+  position: absolute;
+  top: 2.38rem;
+  left: 59.06rem;
+  border-radius: 51.74px 0 0 51.74px;
+  background-color: #fff;
+  width: 33.25rem;
+  height: 47.13rem;
+  overflow: hidden;
+}
+.signup-sub-text,
+.signup-top-text {
+  position: absolute;
+  left: 6.38rem;
+  letter-spacing: -0.01em;
+  line-height: 130%;
+  display: inline-block;
+  font-family: var(--font-poppins);
+}
+.signup-top-text {
+  top: 3.44rem;
+  font-size: var(--font-size-21xl);
+  width: 18.75rem;
+  height: 2.44rem;
+}
+.signup-sub-text {
+  top: 7.38rem;
+  font-size: 1.5rem;
+  width: 12.25rem;
+  height: 2rem;
+}
+.signup-input4 {
+  position: absolute;
+  top: 11rem;
+  left: 6.13rem;
+  width: 20.81rem;
+  height: 2.44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.signup-button-text {
+  position: relative;
+  line-height: 125%;
+  font-weight: 600;
+}
+.signup-primary-button {
+  position: absolute;
+  top: 31.75rem;
+  left: 6.19rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-burlywood);
+  width: 22.06rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--secondary-primary-white);
+  cursor: pointer;
+}
+.signup-primary-button:hover {
+  background-color: #f5c219;
+}
+.signup-screen-container {
+  position: relative;
+  background-color: var(--secondary-primary-white);
+  width: 100%;
+  height: 52rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-inter);
+}
+
+.login-redirect {
+  top: 43.28rem;
+  left: 8.96rem;
+  font-size: 1.11rem;
+  font-weight: 500;
+  width: 15.34rem;
+  height: 1.76rem;
+  position: absolute;
+  font-family: var(--font-athiti);
+  display: inline-block;
+  color: var(--color-gray-400);
+}
