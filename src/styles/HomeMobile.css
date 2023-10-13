@@ -1,0 +1,87 @@
+.smart-cradle-text {
+  position: absolute;
+  top: 0;
+  left: 3.13rem;
+  letter-spacing: -0.01em;
+  line-height: 130%;
+  display: inline-block;
+  width: 14.06rem;
+  height: 2.56rem;
+}
+.subtext {
+  margin: 0;
+}
+.subtext-container {
+  position: absolute;
+  top: 3.06rem;
+  left: 0;
+  font-size: var(--body-bold-size);
+  line-height: 125%;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: center;
+  display: inline-block;
+  width: 19.94rem;
+}
+.text-container {
+  position: absolute;
+  top: 28.25rem;
+  left: 2.25rem;
+  width: 19.94rem;
+  height: 5.69rem;
+  text-align: left;
+  font-size: 2rem;
+  font-family: var(--font-poppins);
+}
+.button-text, .button-secondary-text {
+  position: relative;
+  line-height: 125%;
+  font-weight: 600;
+}
+.button-primary,
+.button-secondary {
+  position: absolute;
+  left: 1.19rem;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 22.06rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.button-primary {
+  top: 39.25rem;
+  background-color: var(--color-burlywood);
+  color: var(--secondary-primary-white);
+}
+.button-secondary {
+  top: 44.63rem;
+}
+.button-secondary-text {
+  color: black;
+}
+.home-container {
+  position: relative;
+  background-color: var(--secondary-primary-white);
+  width: 100%;
+  height: 52.75rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-inter);
+}
+
+.home-cradle-family-icon {
+  position: absolute;
+  top: 7.56rem;
+  left: 0.5rem;
+  border-radius: 85px;
+  width: 25.31rem;
+  height: 16.81rem;
+  object-fit: cover;
+}

@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,104 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
 }
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-poppins: Poppins;
+  --font-dm-sans: "DM Sans";
+  --font-athiti: Athiti;
+  --font-sf-pro-display: "SF Pro Display";
+  --body-bold: "SF Pro Text";
+
+  /* font sizes */
+  --font-size-sm: 0.88rem;
+  --font-size-mini: 0.94rem;
+  --font-size-xl: 1.25rem;
+  --font-size-lg: 1.13rem;
+  --font-size-base: 1rem;
+  --font-size-7xs: 0.38rem;
+  --font-size-8xs: 0.31rem;
+  --font-size-6xs: 0.44rem;
+  --font-size-7xs-3: 0.33rem;
+  --font-size-8xs-8: 0.3rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-11xl: 1.88rem;
+  --font-size-xs: 0.75rem;
+  --font-size-lgi: 1.19rem;
+  --font-size-smi: 0.81rem;
+  --font-size-21xl: 2.5rem;
+  --font-size-xs-8: 0.74rem;
+  --font-size-xl-7: 1.29rem;
+  --body-bold-size: 1.06rem;
+
+  /* Colors */
+  --secondary-primary-white: #fff;
+  --color-gainsboro: #d8dadc;
+  --label-color-light-primary: #000;
+  --color-whitesmoke-100: #efefef;
+  --color-whitesmoke-200: rgba(249, 249, 249, 0.94);
+  --color-sandybrown-100: #dd9e48;
+  --color-darkgray: #acabab;
+  --color-gray-100: #070707;
+  --color-gray-200: #010101;
+  --color-gray-300: rgba(0, 0, 0, 0.7);
+  --color-gray-400: rgba(0, 0, 0, 0.5);
+  --color-mediumseagreen-100: #05cd99;
+  --color-mediumseagreen-200: #07b464;
+  --color-darkslateblue: #2b3674;
+  --secondary-grey-600: #a3aed0;
+  --color-blue: #4318ff;
+  --color-chocolate: #b96d05;
+  --color-darkslategray-100: #333231;
+  --separator-color-light-with-transparency: rgba(60, 60, 67, 0.36);
+  --color-darkslategray-200: rgba(11, 70, 84, 0.24);
+  --color-crimson: #e64646;
+  --color-burlywood: #f5c482;
+  --color-floralwhite: rgba(252, 247, 235, 0.85);
+  --color-dimgray: #747474;
+  --color-royalblue: #007aff;
+
+  /* Gaps */
+  --gap-xs: 0.75rem;
+  --gap-7xs: 0.38rem;
+  --gap-3xs: 0.63rem;
+  --gap-17xl: 2.25rem;
+  --gap-8xs: 0.31rem;
+  --gap-11xs: 0.13rem;
+
+  /* Paddings */
+  --padding-lg: 1.13rem;
+  --padding-26xl: 2.81rem;
+  --padding-mid: 1.06rem;
+  --padding-133xl: 9.5rem;
+  --padding-base: 1rem;
+  --padding-4xs: 0.56rem;
+  --padding-3xs: 0.63rem;
+  --padding-6xs: 0.44rem;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-xl: 20px;
+  --br-4xs: 9px;
+  --br-xl-2: 20.2px;
+  --br-8xs-4: 4.4px;
+  --br-26xl: 45px;
+  --br-32xl-7: 51.7px;
+  --br-10xs: 3px;
+  --br-66xl: 85px;
+  --br-5xl: 24px;
+}
+
+
