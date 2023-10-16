@@ -662,5 +662,18 @@
   color: #fff;
 }
 
+.image-gallery {
+  display: flex;
+  gap: 10px; /* spacing between images */
+  margin-top: 7rem; /* spacing from the header */
+}
+
+.sensor-image {
+  width: 100px;  /* adjust this based on your design requirements */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;  /* rounded corners */
+}
+
 
   

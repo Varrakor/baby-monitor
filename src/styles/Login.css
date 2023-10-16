@@ -227,6 +227,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-lg) var(--padding-26xl);
+  cursor: pointer;
 }
 .social-icon-apple {
   position: absolute;

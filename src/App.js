@@ -31,10 +31,11 @@ function App() {
        <div className="App">
          <Routes>
              <Route path="/" element={<Login />} />
-             <Route path="/auth" element={<Login />} />
+             <Route path="/auth" element={<Auth />} />
              <Route path="/home" element={<Home />} />
              <Route path="/signup" element={<Signup />} />
              <Route path="/dashboard" element={<Dashboard />} />
+             <Route path="/analytics" element={<Analytics />} />
          </Routes>
        </div>
      </Router>

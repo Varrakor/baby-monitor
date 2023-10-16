@@ -1,8 +1,24 @@
 import React from "react";
 import "../styles/Signup.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth, googleProvider } from '../config/firebase';
+import { signInWithPopup } from 'firebase/auth';
 
 const Signup = () => {
+
+  const navigate = useNavigate()
+
+  const signUpWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      console.log("Successfully signed up with Google");
+      navigate('/dashboard');
+    } catch (err) {
+      console.log("Google sign-up failed");
+      console.error(err);
+    }
+  };
+
   return (
     <div className="signup-screen-container">
       <div className="signup-left-container">
@@ -56,7 +72,7 @@ const Signup = () => {
           <div className="icon-text"> Apple</div>
         </div>
         <div className="signup-google-icon-button">
-          <div className="social-icon-google-group">
+          <div className="social-icon-google-group" onClick={signUpWithGoogle}>
             <img className="signup-google-icon" alt="" src="/GoogleIcon.svg" />
             <div className="icon-text">Google</div>
           </div>
