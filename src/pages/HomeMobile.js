@@ -21,7 +21,7 @@ const HomeMobile = () => {
           src="/Cradle-Family.png"
         />
       <div className="text-container">
-        <b className="smart-cradle-text">Smart Cradle</b>
+        <b className="smart-cradle-text">Smart Baby Monitor</b>
         <div className="subtext-container">
           <p className="subtext">{`Click down below and start `}</p>
           <p className="subtext">the smart baby care journey!</p>

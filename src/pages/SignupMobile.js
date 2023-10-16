@@ -1,7 +1,24 @@
 import React from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import { auth, googleProvider } from '../config/firebase';
+import { signInWithPopup } from 'firebase/auth';
 import "../styles/SignupMobile.css";
 
 const SignUpMobile = () => {
+
+  const navigate = useNavigate()
+
+  const signUpWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      console.log("Successfully signed up with Google");
+      navigate('/dashboard');
+    } catch (err) {
+      console.log("Google sign-up failed");
+      console.error(err);
+    }
+  };
+
   return (
     <div className="sign-up-container">
       <div className="family-icon-container">

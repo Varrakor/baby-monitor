@@ -32,7 +32,7 @@ const Signup = () => {
         <img className="signup-star-icon" alt="" src="/object.svg" />
       </div>
       <div className="signup-form-container">
-        <b className="signup-top-text">Smart Cradle</b>
+        <b className="signup-top-text">Smart Baby Monitor</b>
         <b className="signup-sub-text">Create account</b>
         <div className="signup-input4">
           <input className="input-field1" placeholder="Mobile phone" />

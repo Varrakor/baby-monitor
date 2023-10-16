@@ -128,14 +128,15 @@ const Dashboard = () => {
         const averageTemperature = totalTemperature / sensorData.length;
 
         setSensorData(sensorData);
-        setTemperature(sensorData[0].temperature);
-        setHumidity(sensorData[0].humidity)
+        let length = sensorData.length
+        setTemperature(sensorData[length - 1].temperature);
+        setHumidity(sensorData[length - 1].humidity)
         setAverageTemperature(averageTemperature);
         setMaxHumidity(maxHumidity);
         setLoading(false);
 
         const temperatureData = sensorData.map(data => data.temperature);
-        const humidityData = sensorData.map(data => data.humidity);   
+        const humidityData = sensorData.map(data => data.humidity);
 
         setChartData(prevData => ({
           ...prevData,

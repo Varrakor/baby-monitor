@@ -6,7 +6,7 @@ const MobileNav = () => {
 
     const navigate = useNavigate()
     const redirectToHome = () => {
-        navigate("/")
+        navigate("/dashboard")
     }
 
     return (

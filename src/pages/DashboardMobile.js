@@ -1,19 +1,29 @@
 import React from "react";
 import MobileNav from "../components/MobileNav";
+import { useNavigate } from "react-router-dom";
 import "../styles/DashboardMobile.css";
 
 const DashboardMobile = () => {
   
-  return (
+    const navigate = useNavigate()
+    const handleTemperature = () => {
+        navigate("/temperature")
+    }
+
+    const handleHumidity = () => {
+        navigate("/humidity")
+    }
+  
+    return (
     <div className="dashboard">
         <b className="welcome-message">Hi, Drax!</b>
 
         <div>
-            <button className="temperature-wrapper">
+            <button className="temperature-wrapper" onClick={handleTemperature}>
                 <span className="temperature-text">Temperature</span>
                 <i class="uil uil-temperature-half icon-mobile"></i>
             </button>
-            <button className="humidity-wrapper">
+            <button className="humidity-wrapper" onClick={handleHumidity}>
                 <span className="humidity-text">Humidity</span>
                 <i class="uil uil-tear icon-mobile"></i>
             </button>

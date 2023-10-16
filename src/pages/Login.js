@@ -33,7 +33,7 @@ const Login = () => {
       </div>
 
       <div className="login-form">
-        <b className="top-text">Smart Cradle</b>
+        <b className="top-text">Smart Baby Monitor</b>
         <b className="sub-text">Hi, Welcome!</b>
         <div className="input1">
           <div className="">Email address</div>

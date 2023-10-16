@@ -1,8 +1,24 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth, googleProvider } from '../config/firebase'; // Import auth and googleProvider
+import { signInWithPopup } from 'firebase/auth'; // Import signInWithPopup and signOut
 import "../styles/LoginMobile.css";
 
 const LoginMobile = () => {
+
+    const navigate = useNavigate()
+    const signInWithGoogle = async () => {
+        try {
+          await signInWithPopup(auth, googleProvider);
+          // Redirect to /home after successful login
+          console.log("navigating to home")
+          navigate('/dashboard');
+        } catch (err) {
+          console.log("Login failed")
+          console.error(err);
+        }
+      };
+
     return (
         <div className="login-container">
             <b className="welcome-text">Hi, Welcome!</b>
@@ -42,7 +58,7 @@ const LoginMobile = () => {
                 <div className="icon-text-mobile"> Apple</div>
                 </div>
                 <div className="button-with-google-icon-mobile">
-                    <div className="social-icon-google-group-mobile">
+                    <div className="social-icon-google-group-mobile" onClick={signInWithGoogle}>
                         <img className="google-icon-mobile" alt="" src="/GoogleIcon.svg" />
                         <div className="icon-text">Google</div>
                     </div>
