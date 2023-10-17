@@ -10,13 +10,13 @@ import HomeMobile from './pages/HomeMobile';
 import SignUpMobile from './pages/SignupMobile';
 import LoginMobile from './pages/LoginMobile';
 import DashboardMobile from './pages/DashboardMobile';
+import Temperature from './pages/Temperature';
+import Humidity from './pages/Humidity';
 import { Analytics } from './components/analytics'; 
 
 import './App.css';
 
 function App() {
-  const user = auth.currentUser;
-  console.log(user)
 
   let mobile = false
 
@@ -31,10 +31,11 @@ function App() {
        <div className="App">
          <Routes>
              <Route path="/" element={<Login />} />
-             <Route path="/auth" element={<Login />} />
+             <Route path="/auth" element={<Auth />} />
              <Route path="/home" element={<Home />} />
              <Route path="/signup" element={<Signup />} />
              <Route path="/dashboard" element={<Dashboard />} />
+             <Route path="/analytics" element={<Analytics />} />
          </Routes>
        </div>
      </Router>
@@ -47,6 +48,8 @@ function App() {
             <Route path="/signup" element={<SignUpMobile />} />
             <Route path="/login" element={<LoginMobile />} />
             <Route path="/dashboard" element={<DashboardMobile />} />
+            <Route path="/temperature" element={<Temperature />} />
+            <Route path="/humidity" element={<Humidity />} />
           </Routes>
         </div>
       </Router>

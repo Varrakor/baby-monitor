@@ -1,8 +1,24 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth, googleProvider } from '../config/firebase'; // Import auth and googleProvider
+import { signInWithPopup, signOut } from 'firebase/auth'; // Import signInWithPopup and signOut
 import "../styles/Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const signInWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      // Redirect to /home after successful login
+      console.log("navigating to home")
+      navigate('/dashboard');
+    } catch (err) {
+      console.log("Login failed")
+      console.error(err);
+    }
+  };
+
   return (
     <div className="login-screen-container">
       <div className="left-container">
@@ -17,7 +33,7 @@ const Login = () => {
       </div>
 
       <div className="login-form">
-        <b className="top-text">Smart Cradle</b>
+        <b className="top-text">Smart Baby Monitor</b>
         <b className="sub-text">Hi, Welcome!</b>
         <div className="input1">
           <div className="">Email address</div>
@@ -59,7 +75,7 @@ const Login = () => {
             <div className="icon-text"> Apple</div>
           </div>
           <div className="button-with-google-icon">
-            <div className="social-icon-google-group">
+            <div className="social-icon-google-group" onClick={signInWithGoogle}>
               <img className="google-icon" alt="" src="/GoogleIcon.svg" />
               <div className="icon-text">Google</div>
             </div>

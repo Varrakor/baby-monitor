@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import { firebaseConfig } from '../config/firebase';
+import { auth } from '../config/firebase';
 
 export const Analytics = () => {
   const [sensorData, setSensorData] = useState([]);

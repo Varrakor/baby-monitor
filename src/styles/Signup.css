@@ -225,7 +225,7 @@
 .signup-sub-text,
 .signup-top-text {
   position: absolute;
-  left: 6.38rem;
+  left: 3.38rem;
   letter-spacing: -0.01em;
   line-height: 130%;
   display: inline-block;
@@ -234,7 +234,7 @@
 .signup-top-text {
   top: 3.44rem;
   font-size: var(--font-size-21xl);
-  width: 18.75rem;
+  width: 25.75rem;
   height: 2.44rem;
 }
 .signup-sub-text {
