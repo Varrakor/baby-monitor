@@ -194,7 +194,7 @@ const Dashboard = () => {
       </div>
 
       <div className="welcome-container">
-        <b className="greeting">Hi, Drax !</b>
+        <b className="greeting">Hi, {user?.displayName.split(" ")[0]}!</b>
         <div className="welcome-home">{`Welcome home! The air temperature and humid is good & fresh today.`}</div>
         <img className="cradle-family-icon" alt="" src="/Cradle-Family.png" />
         <div className="temp-value">+{temperature}°C</div>
@@ -232,13 +232,6 @@ const Dashboard = () => {
         >
          <div className="image">Image</div>
           <i class="uil uil-camera icon"></i>
-        </button>
-        <button
-          className={`sound-parent ${selectedStat === 'Sound' ? 'selected' : ''}`}
-          onClick={() => handleStatSelection('Sound')}
-        >
-          <div className="sound">Sound</div>
-          <i class="uil uil-microphone icon"></i>
         </button>
       </div>
 
@@ -281,9 +274,6 @@ const Dashboard = () => {
       <div className="details-container">
         <div className="members-div">
           <span className="members">Members</span>
-          <button className="member-arrow-button">
-            <i class="uil uil-arrow-right member-arrow-icon"></i>
-          </button>
           <div className="member-details">
             <img className="member1" alt="" src="/human.png" />
             <div className="dad">Dad</div>
@@ -296,9 +286,6 @@ const Dashboard = () => {
           
         <div className="statistics-div">
           <span className="statistics">Statistics</span>
-          <button className="statistics-arrow-button">
-            <i class="uil uil-arrow-right statistics-arrow-icon"></i>
-          </button>
           <div className="statistics-chart">
             <Line options={options} data={chartData} width={800} height={400}/>
           </div>
